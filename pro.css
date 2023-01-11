@@ -1,0 +1,237 @@
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #333;
+    width:100%;
+    position:fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 150px;
+}
+header .logo{
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1.8em;
+    color:aqua;
+}
+.navigation a{
+    color: rgb(244, 244, 244);
+    text-decoration: none;
+    font-size: 1.8em;
+    padding-left:10px;
+}
+.navigation a:hover{
+    color: aqua;
+}
+section{
+    padding: 80px 50px;
+}
+.main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    background-image: url("../protofil/PicsArt_11-27-03.44.20.png");
+    background-size:cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.main h2{
+    color:aliceblue;
+    font-size: 30px;
+    font-weight:bold;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top:10px;
+    color:aqua;
+    font-size:50px;
+    font-weight:bold;
+}
+.main h3{
+    color:aliceblue;
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top:10px ;
+    margin-bottom:30px ;
+}
+.main-btn{
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(5, 132, 132);
+    color:aliceblue;
+    border-radius: 15px;
+    display: inline-block;
+    padding:0.9375em 2.1875em;
+    letter-spacing: 1px;
+    margin-bottom:40px;
+    transition: .7s ease;
+}
+.main-btn:hover{
+    background-color: aqua;
+    transform:scale(1.1)
+}
+.social-icons a{
+    color:aliceblue;
+    font-size: 1.7em;
+    padding-right:30px;
+    transition: .7s ease;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:aqua;
+    margin-bottom:30px;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.card{
+    background-color:#fff;
+    width:21.25em;
+    box-shadow:0 5px 25px rgb(139, 137, 137);
+    border-radius:10px;
+    padding:25px;
+    margin:10px;
+    transition: .5s;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.icon{
+    font-size: 8em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: aqua;
+    font-size:1.2em;
+    font-weight:700;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.projects{
+    background-color: #000016;;
+}
+.projects .contect{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project-card{
+    background-color: aliceblue;
+    border:3px solid white;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: .7;
+}
+.project-card .project-info p{
+    margin-left: 20%;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.project-image img{
+    width:100%;
+    height: 350px;
+}
+.progect-info{
+    padding:1em;
+}
+.project-categary{
+    font-size:0.8 em;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:10px;
+}
+.project-title a{
+    text-decoration: none;
+}
+.footer{
+    background-color:#000016;
+    color: #fff;
+    padding:2em;
+    display:flex;
+    justify-content:space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:aqua;
+    font-size: 30px;
+}
+@media(max-width:1023px){
+    header{
+        padding:12px 20px;
+    }
+    .navigation a{
+        padding-left:10px;
+    }
+    .title{
+        font-size:1.8em;
+    }
+    section{
+        padding:80px 20px;
+    }
+    .main-contect h2{
+        font-size:1em;
+    }
+    .main-contect h3{
+        font-size:1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-contect h2{
+        font-size:0.8em;
+    }
+    .main-contect h3{
+        font-size:1.4em;
+    }
+}
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
